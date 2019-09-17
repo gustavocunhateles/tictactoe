@@ -1,0 +1,124 @@
+/* Estilo dos elementos que compõem a interface */
+
+html, body
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	background: rgba(0,0,0,0.8) !important;
+}
+
+.nav-bar-TIC
+{
+	width: 100%;
+	height: 150px;
+	float: left;
+	background: rgba(178,34,34,0.8);
+	box-shadow: 0px 0px 10px white;
+}
+.nav-bar-TIC-Left
+{
+	width: 150px;
+	height: 100%;
+	float: left;
+	cursor: pointer;
+	color: white;
+	font-size: 15px;
+	padding-top: 15px;
+	font-family: Verdana, Helvetica;
+	padding-left: 5px;
+	margin-left: 15px;
+}
+.nav-bar-TIC-Left:hover
+{
+	text-shadow: 0px 0px 4px rgba(255,255,255,0.8);
+}
+
+.nav-bar-TIC-Mid
+{
+	position: relative;
+	float: left;
+	width: 500px;
+	height: 100%;
+}
+.nav-bar-TIC-Mid-Tool
+{
+	color:white;
+	font-family: Verdana, Helvetica;
+	font-size: 15px;
+	text-align: center;
+	cursor: pointer;
+	width: 80px;
+	height: 50%;
+	float: left;
+	padding-top: 15px;
+}
+.nav-bar-TIC-Mid-Tool:hover
+{
+	text-shadow: 0px 0px 4px white;
+	background:rgba(178,34,34,1);
+}
+
+.container-TIC
+{
+	float: left;
+	height: calc(100% - 50px);
+	max-height: auto;
+	width: 100%;
+}
+.scene-TIC
+{
+	float: left;
+	height: 100%;
+}
+.board-TIC
+{
+	float: left;
+	width: 720px;
+	min-width: 720px;
+	min-height: 720px;
+	height: 720px;
+	background: rgba(178,34,34,0.2);
+	margin-top: 20px;
+}
+.board-TIC-info
+{
+	float: left;
+	background: rgba(178,34,34,0.5);
+	width: 200px;
+	min-width: 200px;
+	margin-right: 10px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.board-TIC-Info-Algorithm, .board-TIC-Info-Nodes-Number, .board-TIC-Info-Nodes-Path, .board-TIC-Info-Nodes-Ramification, .board-TIC-Info-Tree-Depth
+{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color:white;
+	display: none;
+	margin-top: 15px;
+}
+
+.houses-TIC
+{
+	width: 700px;
+	height: 700px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.house-TIC
+{
+	float: left;
+	border:1px solid rgba(0,0,0,0.4);
+	cursor: pointer;
+	background: rgba(178,34,34,0.6);
+	color: white;
+	font-size: 50px;
+	padding-top: 65px;
+	text-align: center; 
+}
