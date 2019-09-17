@@ -1,0 +1,5 @@
+
+																											Olá, este é o Tic-Tac-Toe v 0.4.
+ 
+Este programa possui como finalidade primoridal testar, analisar e quantificar o jogo da velha fazendo uso dos algoritmos: MiniMax e AlfaBeta. Foi feito na linguagem: HTML/JavaScript, utilizou:Jquery( meramente para manipulação da interface e eventos oriundos dos bottões da interface ), Bootstrap(Framework para desenvolvimento de Interfaces amigavéis desenvolvido pela Twitter) e BoilerPlate(também um framwork).
+A maior parte das linhas de código é oriunda da manipulação e criação da interface. Os algoritmos estão implementados e podem ser encontrados em: js/Engine.js, o grande montate de arquivos remascentes são oriudos dos frameworks e boas práticas em programação Html/Javascript;

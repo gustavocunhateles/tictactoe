@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jogo da Velha</title> 
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css"> <!-- Oriundo do frameWork: BoilerPlate -->
+        <link rel="stylesheet" href="css/tictactoe.css"> <!-- Arquivo de estilo das divs e elementos HTML para o tic tac toe -->
+        <link rel="stylesheet" href="css/bootstrap.css">  <!-- Oriundo do frameWork: Bootstrap -->  
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script> <!-- Oriundo do frameWork: BoilerPlate -->
+    </head>
+    <body>
+        <!-- BARRA DE BOTÕES NO TOPO -->
+        <div class = "nav-bar-TIC"><!-- class é a definição de um conjunto de elementos de estilo tais quais, este elemento possui. Essa classe eseu estilo está definido no arquivo: css/tictactoe.css. -->
+            
+            <!--
+            <div class = "nav-bar-TIC-Left" title = "Nome do sistema">
+                Jogo da Velha
+            </div>
+            -->
+            <div class = "nav-bar-TIC-Mid">
+                            
+                 <div class = "nav-bar-TIC-Left" title = "Escolha">
+			Escolha 
+		 </div>           
+		 
+                 <div class = "nav-bar-TIC-Left">
+			   
+			
+			<div class = "nav-bar-TIC-Mid-Tool" title = "Alfa-Beta" data-type = "AlfaBeta"> <!-- Este Botão seleciona o algoritmo de alfabeta. O evento que trata o click está em : js/engine.js -->
+                    <!--class = "glyphicon glyphicon-font"-->	
+                    		<span>Alfa-Beta</span>
+                	</div>
+                
+	                <div class = "nav-bar-TIC-Mid-Tool" title = "Mini-Max" data-type = "MiniMax"> <!-- Este botão seleciona o algorimo de minimax. O evento que trata o click está em: js/engine.js -->
+	                    <span >Mini-Max</span>
+	                </div>        
+	                	
+		</div>
+                    
+               
+                
+                
+                
+                
+              
+                <div id = "TIC-Play" class = "nav-bar-TIC-Mid-Tool" title = "Jogar" data-type = "play"> <!-- Se  o jogador já tiver escolhido um algoritmo, então, este algoritmo realizara jogadas até que seja clicado no botão stop-->
+                    <span class = "glyphicon glyphicon-play"></span>
+                </div>
+                
+                <div class = "nav-bar-TIC-Mid-Tool" title = "Reiniciar" data-type = "new-match"> <!-- Este Botão Reinicia o jogo, o Evento que trata o click está em: js/Engine.js -->
+                    <span class = "glyphicon glyphicon-repeat"></span>
+                </div>
+                
+         
+                
+            </div>
+        </div>
+        <div class = "container-TIC"> <!-- Apenas define a area possível para o tabuleiro -->
+            <div class = "scene-TIC"> <!-- para enquadrar o tabuleiro e o quadro de informações no meio -->
+                <div class = "board-TIC-info"> <!-- aqui será exibido as informações de runtime dos algoritmos -->
+                    <div class =  "board-TIC-Info-Algorithm"> <!-- aqui será exibido qual algoritmo foi escolhido se houver um algoritmo escolhido -->
+                    </div>
+                    <div class =  "board-TIC-Info-Nodes-Number" ><!-- Diz o número total de nodes da arvore de estados, contando com o node princial (tabuleiro vazio) -->
+                    </div>
+                    <div class =  "board-TIC-Info-Tree-Depth" ><!-- Informa o tamanho máximo de profundidade da arvore -->
+                    </div>
+                    <div class =  "board-TIC-Info-Nodes-Path"> <!-- Mostra a quantidade dde nós expandidos apartir de um estado qualquer -->
+                    </div>
+                    <div class =  "board-TIC-Info-Nodes-Ramification" > <!-- Mostra o fator de ramificação do estado atual  -->
+                    </div>
+                </div>
+                <div class = "board-TIC"><!-- contém a mesa e os elementos: casas e etc.  -->
+                    <div class = "houses-TIC"> <!-- Contém a disposição das casas -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <!-- Smiliar aos Includes do C ANSI -->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script><!-- Incluo ao meu projeto o conjunto de funções e objetos do Jqeury. Jquery possui como uma de suas tantas funções ser um manipulador de elementos HTML. -->
+    <script src="js/vendor/bootstrap.min.js"></script><!-- Inclui ao meu projeto o conjunto de funções e objetos do bootstrap. Bootstrap é um framework cujo o ideal e fazer seu aplicativo rodar em qualquer dispositvo e ficar padronziado -->
+    <script src="js/Engine.js"></script> <!-- Inclui o arquivo principál do projeto. Neste arquivo é onde está contido: A Implementação dos algoritmos, as variaveis usadas e as funções controladoras de eventos. Todo o resto, é meramente interface. -->
+</html>
